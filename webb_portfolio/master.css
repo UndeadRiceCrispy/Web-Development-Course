@@ -1,0 +1,175 @@
+/* Note: Used Color Scheme from Github Profile I built earlier this year https://github.com/UndeadRiceCrispy but content was partially adopted for this project*/
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector & Typography, Note: Used Color Scheme from Github Profile I built earlier this year */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #242138; /* Dark Blue/Purple */
+    color: #EAD7CC; /* Light Cream */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: #1CE6B2; /* Bright Teal */
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #FFB64D; /* Orange */
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 182, 77, 0), rgba(255, 182, 77, 0.75), rgba(255, 182, 77, 0));
+    margin: 2rem 0;
+}
+
+/* ID Selector */
+#date-container {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #1CE6B2;
+    margin-top: 10px;
+}
+
+/* Class Selector & Layout */
+.letter-body {
+    max-width: 800px;
+    margin: auto;
+    background: #2a2640;
+    padding: 2rem;
+    border: 1px solid #1CE6B2;
+    border-radius: 8px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #1CE6B2;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Structure and Margin/Padding/Border */
+header, footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1f1c30;
+}
+
+nav {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2a2640;
+    border-bottom: 2px solid #1CE6B2;
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(42, 38, 64, 0.5);
+    border-radius: 5px;
+}
+
+/* Descendant Selector */
+nav a {
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Pseudo-class Selector */
+nav a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* List-style Properties */
+ul {
+    list-style-type: square; /* Changed from default */
+    padding-left: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #FFB64D;
+}
+
+th, td {
+    border: 1px solid #1CE6B2;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2a2640;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #1CE6B2;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    color: #FFB64D;
+    padding: 0 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #EAD7CC;
+    color: #242138;
+}
+
+button[type="submit"] {
+    background-color: #FFB64D;
+    color: #242138;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #1CE6B2;
+}

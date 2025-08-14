@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Star - Résumé</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <header>
+        <h1>John Star</h1>
+        <h2>AI Engineer | IT Support Specialist | System Administrator</h2>
+    </header>
+
+    <nav>
+        <a href="resume.html">Résumé</a>
+        <a href="cover-letter.html">Cover Letter</a>
+        <a href="career-goals.html">Career Goals</a>
+    </nav>
+
+    <main>
+        <section id="summary">
+            <h3>Summary</h3>
+            <p>
+                Eager to apply a background in AI engineering, data analytics, and 13 years of IT expertise to develop innovative solutions. Proficient in LLMs, NLP, and AI data pipelines with a proven history of improving user experiences. My experience includes overseeing a $3B defense network and launching an AI bot that saved nearly $900,000 in under three months.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="experience">
+            <h3>Experience</h3>
+            <article>
+                <h4>AI Engineer - <span>Impact Networking LLC</span> (11/2024 - 02/2025)</h4>
+                <ul>
+                    <li>Designed and deployed scalable AI solutions using Azure, implementing CI/CD pipelines and DevOps best practices.</li>
+                    <li>Built AI-powered assistant bots using Teams Toolkit, Microsoft Copilot, OpenAI, and custom LLMs.</li>
+                    <li>Developed and integrated Retrieval-Augmented Generation (RAG) models with major LLM APIs.</li>
+                </ul>
+            </article>
+            <br>
+            <article>
+                <h4>Service Desk Core Engineer - <span>Impact Networking LLC</span> (08/2022 - 11/2024)</h4>
+                <ul>
+                    <li>Managed Windows Server environments (2012-2022), Active Directory, and network services like DNS, DHCP, and VPN.</li>
+                    <li>Administered Microsoft 365, Exchange, SQL, and SharePoint, ensuring high availability and security.</li>
+                    <li>Achieved a <strong>99.8% customer satisfaction rate</strong> over 419 surveys through leadership and innovative IT solutions.</li>
+                </ul>
+            </article>
+            <br>
+            <article>
+                <h4>Aegis Weapon System Network Supervisor - <span>U.S. Navy</span> (03/2013 - 02/2022)</h4>
+                <ul>
+                    <li>Led 24/7 systems administration for a <em>$3 Billion Dollar Aegis Weapon System</em>, ensuring 99.9%+ uptime.</li>
+                    <li>Supervised and mentored a 15-person IT/networking team, boosting advancement rates by 30%.</li>
+                    <li>Engineered and maintained a secure tactical network using Cisco routers and dynamic routing protocols (OSPF, BGP).</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section id="skills-table">
+            <table>
+                <caption>Key Technical Skills</caption>
+                <thead>
+                    <tr>
+                        <th>AI & Machine Learning</th>
+                        <th>Cloud & DevOps</th>
+                        <th>Systems Administration</th>
+                        <th>Networking & Security</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LLM & NLP Solutions (RAG)</td>
+                        <td>Microsoft Azure</td>
+                        <td>Windows Server (2012-2022)</td>
+                        <td>Cisco Routers & Switches</td>
+                    </tr>
+                    <tr>
+                        <td>TensorFlow & PyTorch</td>
+                        <td>Azure DevOps (CI/CD)</td>
+                        <td>VMware & Hyper-V</td>
+                        <td>Cybersecurity (ACLs, Hardening)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:jonstar88@gmail.com">jonstar88@gmail.com</a> | +1 (337)-387-8584</p>
+        <div id="date-container"></div>
+    </footer>
+
+    <script>
+        // JavaScript to populate the date used the course content and W3Schools Example)
+        const dateElement = document.getElementById('date-container');
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+        });
+        dateElement.textContent = `Today's Date: ${currentDate}`;
+
+        // JavaScript to write a message to the console
+        console.log("Résumé page loaded successfully :).");
+    </script>
+
+</body>
+</html>
